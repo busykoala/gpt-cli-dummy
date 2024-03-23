@@ -3,7 +3,9 @@
 ## Installation
 
 ```bash
-poetry install
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Set up
@@ -17,6 +19,6 @@ Then add your API token.
 ## Usage
 
 ```bash
-poetry run python cli.py
-poetry run python cli.py --temperature 0.8 --file-path ./assets/context.txt
+python cli.py
+python cli.py --temperature 0.8 --file-path ./assets/context.txt
 ```
